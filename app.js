@@ -71,7 +71,7 @@ function handleCM(event){
 }
 
 function handleSaveClick(){
-    const image = canvas.toDataUrl(); //canvas의 pixel들을 image/jpeg형식의 dataUrl로 저장
+    const image = canvas.toDataURL(); //canvas의 pixel들을 image/jpeg형식의 dataUrl로 저장
     const link = document.createElement("a");//html에 a링크 생성
     link.href = image;
     link.download = "PaintJS - Kyedonghwan";// a링크에 하이퍼링크 생성 download의 경우 이름생성
